@@ -1,8 +1,6 @@
 package ru.netology.web.Page;
 
-import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.SelenideElement;
-import org.openqa.selenium.Keys;
 import ru.netology.web.Data.DataHelper;
 
 import static com.codeborne.selenide.Selenide.$;
@@ -16,8 +14,7 @@ public class LoginPage {
         loginField.setValue(info.getLogin());
         passwordField.setValue(info.getPassword());
         loginButton.click();
-        Selenide.getFocusedElement().sendKeys(Keys.ENTER);
-
         return new VerificationPage();
     }
+
 }
