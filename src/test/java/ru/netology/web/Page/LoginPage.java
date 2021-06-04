@@ -1,9 +1,9 @@
-package ru.netology.Page;
+package ru.netology.web.Page;
 
 import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.SelenideElement;
 import org.openqa.selenium.Keys;
-import ru.netology.Data.DataHelper;
+import ru.netology.web.Data.DataHelper;
 
 import static com.codeborne.selenide.Selenide.$;
 
